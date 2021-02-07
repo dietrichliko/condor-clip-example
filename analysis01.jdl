@@ -1,0 +1,12 @@
+
+Universe = vanilla
+Executable = analysis.sh
+Arguments = $(Item)
+Log = output/analysis.log.$(Cluster)
+Error = output/analysis.err.$(Cluster)-$(Process) 
+Output = output/analysis.out.$(Cluster)-$(Process)
+  
+
++DESIRED_Sites="T2_AT_Vienna"
+
+Queue
